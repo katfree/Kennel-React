@@ -33,7 +33,7 @@ class ApplicationViews extends Component {
         })
             .then(() => fetch(`http://localhost:5002/employees`))
             .then(e => e.json())
-            .then(employees=> this.setState({ employees: employees})
+            .then(employees => this.setState({ employees: employees })
             )
     }
 
@@ -43,12 +43,16 @@ class ApplicationViews extends Component {
         })
             .then(() => fetch(`http://localhost:5002/owners`))
             .then(e => e.json())
-            .then(owners=> this.setState({ owners: owners})
+            .then(owners => this.setState({ owners: owners })
+            )
+            .then(() => fetch(`http://localhost:5002/animalOwners`))
+            .then(e => e.json())
+            .then(animalOwners => this.setState({ animalOwners: animalOwners })
             )
     }
 
 
-    getAllAnimalsAgain =  () => {
+    getAllAnimalsAgain = () => {
         fetch("http://localhost:5002/animals")
             .then(r => r.json())
             .then(animals => this.setState({ animals: animals }))
@@ -56,7 +60,7 @@ class ApplicationViews extends Component {
 
 
 
-    componentDidUpdate () {
+    componentDidUpdate() {
         console.log("componentDidUpdate -- ApplicationViews")
     }
 
@@ -97,15 +101,15 @@ class ApplicationViews extends Component {
                         animalOwners={this.state.animalOwners}
                         dischargeAnimal={this.dischargeAnimal}
                         loadAnimals={this.getAllAnimalsAgain}
-                        />
+                    />
                 }} />
                 <Route exact path="/employees" render={(props) => {
                     return <EmployeeList employees={this.state.employees}
-                    deleteEmployee = {this.deleteEmployee}/>
+                        deleteEmployee={this.deleteEmployee} />
                 }} />
                 <Route exact path="/owners" render={(props) => {
                     return <OwnersList owners={this.state.owners}
-                    deleteOwner={this.deleteOwner}
+                        deleteOwner={this.deleteOwner}
 
                     />
                 }} />

@@ -1,6 +1,21 @@
 {
   "owners": [
     {
+      "id": 1,
+      "name": "Ryan Tanay",
+      "phoneNumber": "123-123-1234"
+    },
+    {
+      "id": 2,
+      "name": "Emma Beaton",
+      "phoneNumber": "321-321-4321"
+    },
+    {
+      "id": 3,
+      "name": "Dani Adkins",
+      "phoneNumber": "234-234-2345"
+    },
+    {
       "id": 4,
       "name": "Adam Oswalt",
       "phoneNumber": "345-345-3456"
@@ -12,6 +27,21 @@
     }
   ],
   "animalOwners": [
+    {
+      "id": 2,
+      "animalId": 2,
+      "ownerId": 3
+    },
+    {
+      "id": 3,
+      "animalId": 3,
+      "ownerId": 1
+    },
+    {
+      "id": 4,
+      "animalId": 4,
+      "ownerId": 2
+    },
     {
       "id": 5,
       "animalId": 5,
