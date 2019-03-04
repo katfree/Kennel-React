@@ -1,9 +1,24 @@
-.animal {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 40px; */
+.animals {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+
+
 }
 .animalsheader {
-    float: right;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+.reloadANimalsButton{
+    display: flex;
+justify-content: center;
+
+
+
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import dog from "./DogIcon.png"
+import { Link } from "react-router-dom";
 
 
 class Animal extends Component {
@@ -14,10 +15,12 @@ class Animal extends Component {
                         </div>
 
 
-                    <div>{this.props.animal.name}</div>
+                    <div>Pet: {this.props.animal.name}</div>
+                    {" "}
                     <div>
-                        {this.props.owners.join(", ")}
+                        Owner: {this.props.owners.join(", ")}
                     </div>
+                    <Link className="nav-link" to={`/animals/${this.props.animal.id}`}>Details</Link>
                     <button
                         onClick={() => this.props.dischargeAnimal(this.props.animal.id)}
                         className="card-link">Delete</button>
