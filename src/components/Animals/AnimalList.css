@@ -3,10 +3,27 @@
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 50px;
 
 
 
+}
+.animal{
+    /* display: flex; */
+
+}
+
+
+.petName {
+    display: flex;
+justify-content: center;
+
+}
+
+.ownerName {
+    display: flex;
+    justify-content: center;
 }
 .animalsheader {
     display: flex;
@@ -20,5 +37,41 @@
 justify-content: center;
 
 
+
+}
+
+.animalButton{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link-animal{
+    display:flex;
+    justify-content: center;
+}
+
+.deleteAnimal{
+    display:flex;
+    justify-content: center;
+
+}
+
+
+.owners {
+
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    padding-right: 100px;
+
+}
+
+.individualOwner{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
 
 }

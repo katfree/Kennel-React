@@ -35,20 +35,17 @@ class AnimalList extends Component {
                     this.props.animals.map(animal =>
                         <Animal key={`animal-${animal.id}`}
                             animal={animal}
-                            dischargeAnimal={this.props.dischargeAnimal}
+                            {...this.props}
+                            
+                            dischargeAnimal={this.props.dischargeAnimal} {...this.props}
 
-                            owners={
-                                this.props.animalOwners
-                                    .filter(ao => ao.animalId === animal.id)
-                                    .map(ao =>
-                                        this.props.owners.find(
-                                            o => o.id === ao.ownerId
 
-                                        ).name
 
-                                    )
+                            owners={this.props.owners}
+                            {...this.props}
+                            animalOwners={this.props.animalOwners}
+                            {...this.props}
 
-                            }
                         />
                     )
 
@@ -61,4 +58,3 @@ class AnimalList extends Component {
 }
 
 export default AnimalList
-

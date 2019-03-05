@@ -26,44 +26,9 @@
       "id": 5
     },
     {
-      "name": "rutyfhcg",
-      "phoneNumber": "utyhcfg",
+      "name": "John",
+      "phoneNumber": "6153890280",
       "id": 6
-    },
-    {
-      "name": "qwaes",
-      "phoneNumber": "qads",
-      "id": 7
-    },
-    {
-      "name": "qwaes",
-      "phoneNumber": "qads",
-      "id": 8
-    },
-    {
-      "name": "John",
-      "phoneNumber": "6153890280",
-      "id": 9
-    },
-    {
-      "name": "John",
-      "phoneNumber": "6153890280",
-      "id": 10
-    },
-    {
-      "name": "John",
-      "phoneNumber": "6153890280",
-      "id": 11
-    },
-    {
-      "name": "John",
-      "phoneNumber": "6153890280",
-      "id": 12
-    },
-    {
-      "name": "John",
-      "phoneNumber": "6153890280",
-      "id": 13
     }
   ],
   "animalOwners": [
@@ -88,28 +53,31 @@
       "ownerId": 4
     },
     {
-      "animalId": 12,
-      "ownerId": 12,
-      "id": 8
+      "animalId": 6,
+      "ownerId": 6,
+      "id": 6
     }
   ],
   "employees": [
     {
       "id": 2,
-      "name": "Jordan Nelson"
+      "name": "Jordan Nelson",
+      "locationId": 1
     },
     {
       "id": 3,
-      "name": "Zoe LeBlanc"
+      "name": "Zoe LeBlanc",
+      "locationId": 1
     },
     {
       "id": 4,
-      "name": "Blaise Roberts"
+      "name": "Blaise Roberts",
+      "locationId": 1
     },
     {
+      "id": 6,
       "name": "jane Doe",
-      "locationId": 1,
-      "id": 6
+      "locationId": 2
     }
   ],
   "locations": [
@@ -127,61 +95,31 @@
   "animals": [
     {
       "id": 2,
-      "name": "Jack"
+      "name": "Jack",
+      "breed": "Lab",
+      "employeeId": 2
     },
     {
       "id": 3,
-      "name": "Angus"
+      "name": "Angus",
+      "employeeId": 6
     },
     {
       "id": 4,
-      "name": "Henley"
+      "name": "Henley",
+      "breed": "Papillon",
+      "employeeId": 4
     },
     {
       "id": 5,
-      "name": "Derkins"
+      "name": "Derkins",
+      "employeeId": 2
     },
     {
       "name": "Dog",
-      "breed": "Lab",
-      "employeeId": 2,
+      "breed": "Papillon",
+      "employeeId": 6,
       "id": 6
-    },
-    {
-      "name": "it7ufjyh",
-      "breed": "rutfyhgcf",
-      "employeeId": 2,
-      "id": 7
-    },
-    {
-      "name": "awsdfxc",
-      "breed": "awesdf",
-      "employeeId": 2,
-      "id": 8
-    },
-    {
-      "name": "Dog",
-      "breed": "Lab",
-      "employeeId": 2,
-      "id": 9
-    },
-    {
-      "name": "Dog",
-      "breed": "Lab",
-      "employeeId": 2,
-      "id": 10
-    },
-    {
-      "name": "Dog",
-      "breed": "Lab",
-      "employeeId": 2,
-      "id": 11
-    },
-    {
-      "name": "New Dog",
-      "breed": "Lab",
-      "employeeId": 3,
-      "id": 12
     }
   ]
 }

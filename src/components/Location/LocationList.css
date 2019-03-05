@@ -1,6 +1,17 @@
-.LocationListContainer {
+.LocationList {
     display: flex;
-     flex-flow: column;
+    flex-flow: row;
+    flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
 
+
+}
+
+.icon--store{
+    width: 100px;
+    height:100px;
 }

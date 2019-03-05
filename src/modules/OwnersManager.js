@@ -18,6 +18,7 @@ export default {
           },
           body: JSON.stringify(newOwner)
         }).then(data => data.json())
-      }
+      },
+  
 
 }
